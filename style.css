@@ -3,3 +3,20 @@ body {background-color: rgb(191, 217, 240)}
 
 .cursive {font-family:cursive;}
 .helvetica{font-family:Helvetica;}
+.courier{font-family:'Courier New', Courier, monospace}
+
+.row{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.row {flex-wrap: wrap;}
+@media only screen and (max-width: 767px) {
+/* For mobile phones: */
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+}
+@media only screen and (min-width: 768px) {
+/* For laptops and desktops: */
+.col-l-1 {width: 8.33%;}
+.col-l-2 {width: 16.66%;}}
