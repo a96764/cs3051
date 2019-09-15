@@ -1,6 +1,8 @@
 body {color:darkblue;}
 body {background-color: rgb(191, 217, 240)}
 
+.purple{font-color:purple}
+
 .cursive {font-family:cursive;}
 .helvetica{font-family:Helvetica;}
 .courier{font-family:'Courier New', Courier, monospace}
