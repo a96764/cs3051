@@ -1,5 +1,5 @@
-body {color:darkblue;}
-body {background-color: rgb(191, 217, 240)}
+body {color:rgb(56, 56, 189);}
+body {background-color: rgb(186, 233, 240)}
 
 .purple{font-color:purple}
 
@@ -7,18 +7,25 @@ body {background-color: rgb(191, 217, 240)}
 .helvetica{font-family:Helvetica;}
 .courier{font-family:'Courier New', Courier, monospace}
 
-.row{
+.row {
     width:100%;
-    display:flex;
-    flex-wrap: wrap;
-}
+    display:flex;}
+
+.col {width:8.33%}
+
 .row {flex-wrap: wrap;}
-@media only screen and (max-width: 767px) {
-/* For mobile phones: */
+
+
+@media only screen and (max-width: 300px) { /* For mobile phones: */
 .col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
+.col-s-4 {width: 33%;}
+.col-s-12 {width: 100%;}
+.one {order:1;}
+.two {order:2;}
+.three {order:3;}
 }
-@media only screen and (min-width: 768px) {
-/* For laptops and desktops: */
+@media only screen and (min-width: 300px) { /* For laptops and desktops: */
 .col-l-1 {width: 8.33%;}
-.col-l-2 {width: 16.66%;}}
+.col-l-4 {width: 33%;}
+.col-l-12 {width: 100%;}
+}
