@@ -24,17 +24,24 @@
 <h2> MENU</h2>
   <ul>
 <li v-for="product in products">
-  <input type="number" v-model.number="product.quantity"/>
 
 
-  <button @click="product.quantity += 1">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+   <div class="alert alert-warning" role="alert">
+  <h3>{{product.name}}</h3>
+</div>
+    <p class="card-text">{{product.text}}</p>
+      <input type="number" v-model.number="product.quantity"/>
+
+ <button @click="product.quantity += 1">
     Add to cart
   </button>
+<button @click="product.quantity -= 1">
+    Remove item
+  </button>  </div>
+</div>
 
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-warning" data-toggle="modal" v-bind:data-target="'#modal-' + product.id">
-  {{ product.name }}
-</button>
 
 <!-- Modal -->
 <div class="modal fade" v-bind:id="'modal-' + product.id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -83,7 +90,7 @@ products: []
    }
  },
  created: function() {
-  fetch('https://api.myjson.com/bins/1b1w2b')
+  fetch('https://api.myjson.com/bins/mnbz7')
     .then(response => response.json())
     .then(json => {
       this.products = json.products
