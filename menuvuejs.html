@@ -34,10 +34,10 @@
     <p class="card-text">{{product.text}}</p>
   </div>
         <input type="number" v-model.number="product.quantity"/>
-   <button @click="product.quantity += 1">
+   <button type="button" class="btn btn-primary" @click="product.quantity += 1">
     Add to cart
   </button>
-<button @click="product.quantity -= 1">
+<button type="button" class="btn btn-danger" @click="product.quantity -= 1">
     Remove item
   </button>
 </div>
