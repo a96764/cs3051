@@ -13,14 +13,29 @@
   </head>
   <body>
 
-<a href="restboot.html" class="badge badge-info">MAIN PAGE</a>
+<div id="app">
+
+<nav>
+<a href="restboot.html" class="badge badge-info">HOME</a>
 <a href="aboutboot.html" class="badge badge-primary">ABOUT US</a>
 <a href="menuvuejs.html" class="badge badge-secondary">MENU</a>
 <a href="healthbenboot.html" class="badge badge-danger">HIMALAYAN AIR</a>
 <a href="https://www.tripsavvy.com/how-mezcal-is-made-1588808" class="badge badge-success">OAXACAN AIR</a>
 <a href="..." class="badge badge-info">CONTACT US</a>
+</nav>
 
-<div id="app">
+<script
+src="https://unpkg.com/vue-router/dist/vue-router.js">
+</script>
+<div id="app"> <p>
+<router-link to="/home">HOME</router-link>
+<router-link to="/menu">ABOUT US</router-link>
+<router-link to="/home">MENU</router-link></p>
+  <router-view></router-view>
+</div>
+
+
+
 <h2> MENU</h2>
   <ul>
 <li v-for="product in products">
@@ -107,5 +122,27 @@ products: []
   }
 })
 </script>
+
+<script type="text/x-template" id="my-home">
+      <p> My home page </p>
+    </script>
+
+      <script>
+      const Home = { template: '#my-home' }
+      const Menu = { template: '<div>Menu</div>' }
+
+      const routes = [
+        { path: '/', component: Home },
+        { path: '/menu', component: Menu }
+      ]
+
+      const router = new VueRouter({
+        routes // short for `routes: routes`
+      })
+
+    const app = new Vue({
+      el: '#app', router
+    })
+    </script>
 </body>
 </html>
