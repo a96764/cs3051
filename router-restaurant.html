@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<div id="app"> <p>
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <span class="navbar-brand mb-0 h1">AIRISH</span>
+
+<router-link to="/">Home</router-link>
+<router-link to="/menu">Menu</router-link>
+<router-link to="/contact">Contact</router-link> </p>
+  <router-view></router-view>
+  </nav>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <script type="text/x-template" id="my-home">
+     <div> <h1>AIRISH</h1>
+<hr>
+
+    <div class="alert alert-primary" role="alert">
+  Check out the health benefits of our Himalayan Air!
+  <a href="healthben.html" style="color:purple">Health benefits of Himalayan air</a></div>
+
+<button type="button" class="btn btn-warning">Our Oaxacan air has a touch of mezcal sscent. Want to learn how mezcal is made?
+<li href="https://www.tripsavvy.com/how-mezcal-is-made-1588808">Click here to learn how mezcal is made!</li>
+</button>
+
+<hr>
+  <h3>Purify and energize yourself with the best quality air from around the world.</h3>
+<hr>
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1495490311930-678c8ecdd120?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="d-block w-100" alt="https://images.unsplash.com/photo-1495490311930-678c8ecdd120?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+        <div class="carousel-caption d-none d-md-block">
+          <h1> Purify your body with the best quaity of air around the world</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.rnz.co.nz/assets/news/167717/eight_col_himalaya.jpg?1539419453" class="d-block w-100" alt="https://www.rnz.co.nz/assets/news/167717/eight_col_himalaya.jpg?1539419453">
+        <div class="carousel-caption d-none d-md-block">
+       <h1>Himalayan Air</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://s3-us-east-2.amazonaws.com/orbitz-media/blog/wp-content/uploads/2019/07/16103056/reasons-to-love-oaxaca.jpg" class="d-block w-100" alt="https://s3-us-east-2.amazonaws.com/orbitz-media/blog/wp-content/uploads/2019/07/16103056/reasons-to-love-oaxaca.jpg">
+        <div class="carousel-caption d-none d-md-block">
+         <h1>Oaxacan Air</h1>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</script>
+
+
+
+<script type="text/x-template" id="my-menu">
+      <div>
+    <h1>MENU</h1>
+<hr>
+<h3> Entree</h3>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PureAir">
+  Purest air shot
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="PureAir" tabindex="-1" role="dialog" aria-labelledby="PureAir" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="PureAir">Purest air shot</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/81497/s300_clouds2-PL-1001515.jpg"></img>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#EnergyAir">
+ Energizing shot
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="EnergyAir" tabindex="-1" role="dialog" aria-labelledby="EnergyAir" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="EnergyAir">Energizing shot</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1020923298%2F960x0.jpg%3Ffit%3Dscale"></img>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-light" data-toggle="modal" data-target="#RelaxShot">
+ Relaxing shot
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="RelaxShot" tabindex="-1" role="dialog" aria-labelledby="RelaxShot" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="RelaxShot">Relaxing shot</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://cdn.himalayaninstitute.org/wp-content/uploads/2016/11/Post-11-Replenishing-Vital-Energy-through-Yoga-Relaxation-Lead-Image.png"></img>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+<h3> Main</h3>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#HimAir">
+Himalayan Air
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="HimAir" tabindex="-1" role="dialog" aria-labelledby="HimAir" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="HimAir">Himalayan air</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg"></img>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#ArticAir">
+Artic air
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ArticAir" tabindex="-1" role="dialog" aria-labelledby="ArticAir" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ArticAir">Artic air</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://meresideblog.files.wordpress.com/2010/01/artic.jpg"></img>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#OaxAir">
+Oaxaca Air
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="OaxAir" tabindex="-1" role="dialog" aria-labelledby="OaxAir" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="OaxAir">Oaxacan Air</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Florecer_en_Oaxaca.jpg/275px-Florecer_en_Oaxaca.jpg"></img>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#MeditAir">
+Meditation Air
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="MeditAir" tabindex="-1" role="dialog" aria-labelledby="MeditAir" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="MeditAir">Energizing shot</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img src="https://personaltao.com/wp-content/uploads/2018/03/guided-meditation.jpg"></img>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </script>
+
+
+    <script type="text/x-template" id="my-contact">
+    <div>
+    <h1>Contact Us</h1>
+    <p> 102 Rue Guadalupe, 75007, Paris, France</p>
+    <p>07 84 83 83 83 </p>
+ <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Suggestions</option>
+      <option>Complains</option>
+      <option>Question</option>
+      <option>Other</option>
+
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Write your question</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<p>We will get back to you!</p>
+    </div>
+    </script>
+
+      <script>
+      const Home = { template: '#my-home' }
+      const Menu = { template: '#my-menu' }
+      const Contact = { temaplate: '#my-contact' }
+
+      const routes = [
+        { path: '/', component: Home },
+        { path: '/menu', component: Menu },
+        { path: '/contact', component: Contact};
+      ]
+
+      const router = new VueRouter({
+        routes // short for `routes: routes`
+      })
+
+    const app = new Vue({
+      el: '#app', router
+    })
+    </script>
+    </script>
+
+    </script>
+
+      <script>
+      const Home = { template: '#my-home' }
+      const Menu = { template: '#my-menu' }
+      const Contact = { template: '#my-contact'}
+
+      const routes = [
+        { path: '/', component: Home },
+        { path: '/menu', component: Menu },
+        { path: '/contact', component: Contact}
+      ]
+
+      const router = new VueRouter({
+        routes // short for `routes: routes`
+      })
+
+    const app = new Vue({
+      el: '#app', router
+    })
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+  </body>
+</html>
